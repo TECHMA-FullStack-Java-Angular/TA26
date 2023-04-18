@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS proyecto (
 );
 
 CREATE TABLE IF NOT EXISTS asignado_a (
-    id int(11) NOT NULL AUTO_INCREMENT,
+    id int NOT NULL AUTO_INCREMENT,
     cientifico VARCHAR(8),
     proyecto VARCHAR(4),
     precio INT,
