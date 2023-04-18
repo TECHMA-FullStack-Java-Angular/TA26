@@ -33,7 +33,7 @@ public class CajeroServiceImpl implements ICajeroService{
 	}
 
 	@Override
-	public Cajero actualizarCientifico(Cajero cajero) {
+	public Cajero actualizarCajero(Cajero cajero) {
 		
 		return iCajero.save(cajero);
 	}

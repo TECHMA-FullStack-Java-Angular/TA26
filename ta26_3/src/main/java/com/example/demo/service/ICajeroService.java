@@ -14,7 +14,7 @@ public interface ICajeroService {
 		
 		public Cajero cajeroXID(int codigo); //Leer datos de un cajero READ
 		
-		public Cajero actualizarCientifico(Cajero cajero); //Actualiza datos del cajero UPDATE
+		public Cajero actualizarCajero(Cajero cajero); //Actualiza datos del cajero UPDATE
 		
 		public void eliminarCajero(int codigo);// Elimina el cajero DELETE
 
