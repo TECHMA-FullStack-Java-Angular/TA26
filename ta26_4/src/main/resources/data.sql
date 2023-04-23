@@ -30,8 +30,8 @@ CREATE TABLE IF NOT EXISTS reserva (
     comienzo datetime,
     fin datetime,
     CONSTRAINT PK_reserva PRIMARY KEY (id),
-    CONSTRAINT FK_reserva FOREIGN KEY (dni) REFERENCES investigadores(dni),
-    CONSTRAINT FK_reserva FOREIGN KEY (num_serie) REFERENCES equipos(num_serie)
+    CONSTRAINT FK_reserva_investigadores FOREIGN KEY (dni) REFERENCES investigadores(dni),
+    CONSTRAINT FK_reserva_equipos FOREIGN KEY (num_serie) REFERENCES equipos(num_serie)
 );
 
 insert into facultad  (codigo,nombre)values(1,'Salud Publica');
