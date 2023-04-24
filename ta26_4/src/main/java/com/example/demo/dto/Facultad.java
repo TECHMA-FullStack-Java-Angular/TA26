@@ -2,7 +2,10 @@ package com.example.demo.dto;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -55,6 +58,8 @@ public class Facultad {
 		this.nombre = nombre;
 	}
 
+	@JsonIgnore
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "facultad")
 	public List<Investigador> getInvestigadores() {
 		return investigadores;
 	}
@@ -63,6 +68,8 @@ public class Facultad {
 		this.investigadores = investigadores;
 	}
 
+	@JsonIgnore
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "facultad")
 	public List<Equipo> getEquipos() {
 		return equipos;
 	}

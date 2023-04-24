@@ -2,8 +2,11 @@ package com.example.demo.dto;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -63,6 +66,8 @@ public class Equipo {
 		this.facultad = facultad;
 	}
 
+	@JsonIgnore
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "num_serie")
 	public List<Reserva> getReservas() {
 		return reservas;
 	}
