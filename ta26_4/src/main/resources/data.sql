@@ -1,3 +1,4 @@
+
 CREATE DATABASE IF NOT EXISTS db_ud26_4;
 USE db_ud26_4;
 
@@ -43,6 +44,6 @@ insert into investigadores (dni,nom_apels, facultad)values('3333333C','Investiga
 insert into equipos (num_serie, nombre, facultad)values('1A','Equipo 1', 3);
 insert into equipos (num_serie, nombre, facultad)values('2B','Equipo 2', 1);
 insert into equipos (num_serie, nombre, facultad)values('3C','Equipo 3', 2);
-insert into reserva (id, dni, num_serie, comienzo, fin)values(1,'3333333C',1,'2023-01-23 12:34:56','2023-04-23 12:34:56');
-insert into reserva (id, dni, num_serie, comienzo, fin)values(2,'2222222B',2,'2020-04-23 12:34:56','2022-04-23 12:34:56');
-insert into reserva (id, dni, num_serie, comienzo, fin)values(3,'1111111A',3,'2022-0-523 12:34:56','2023-05-23 12:34:56');
+insert into reserva (id, dni, num_serie, comienzo, fin)values(1,'3333333C','1A','2023-01-23 12:34:56','2023-04-23 12:34:56');
+insert into reserva (id, dni, num_serie, comienzo, fin)values(2,'2222222B','2B','2020-04-23 12:34:56','2022-04-23 12:34:56');
+insert into reserva (id, dni, num_serie, comienzo, fin)values(3,'1111111A','3C','2022-05-23 12:34:56','2023-05-23 12:34:56');
